@@ -23,10 +23,9 @@ def quick_sort(array,low,high):
 
 if __name__ == '__main__':
     start = time.time()
-    for j in range(0,10):
-        array = []
-        for i in range(0,10000):
-            array.append(10000-i)
-        quick_sort(array,0,len(array)-1)
+    array = []
+    for i in range(0,10000):
+        array.append(10000-i)
+    quick_sort(array,0,len(array)-1)
     end = time.time()
     print ("time:%f" %(end- start))
